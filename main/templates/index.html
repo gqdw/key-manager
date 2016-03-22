@@ -1,1 +1,8 @@
-<h1> test </h1>
+<h2>
+{% for host in hosts %}
+
+<li> {{ host.hostname }} </li>
+<li> {{ host.eth0_ip}} </li>
+<li> {{ host.eth1_ip}} </li>
+{% endfor %}
+</h2>
