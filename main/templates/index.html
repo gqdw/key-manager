@@ -1,8 +1,15 @@
 <h2>
+<table border="1">
 {% for host in hosts %}
 
-<li> {{ host.hostname }} </li>
-<li> {{ host.eth0_ip}} </li>
-<li> {{ host.eth1_ip}} </li>
+	<tr>
+	<td>{{ host.hostname }}</td>
+	<td>{{ host.eth0_ip}}</td>
+	<td>{{ host.eth1_ip}}</td>
+
+	</tr>
+
 {% endfor %}
+</table>
 </h2>
+
