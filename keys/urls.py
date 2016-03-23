@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^test/','main.views.index'),
+    url(r'^read/','main.views.read'),
 ]
