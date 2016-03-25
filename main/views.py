@@ -6,6 +6,11 @@ def index(req):
 	hosts = Host.objects.all()
 	# print Host.objects.count()
 	return render(req, 'index.html', {'hosts':hosts})
+
+def test2(req):
+	hosts = Host.objects.all()
+	# print Host.objects.count()
+	return render(req, 'test2.html', {'hosts':hosts})
 	
 def read(req):
 	with open('/tmp/ecs.cvs.csv','r') as f:
